@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  postgresql:
+      image: 'postgres:latest'
+      ports:
+        - 5432:5432
+      environment:
+        POSTGRES_USER: vinicius # The PostgreSQL user (useful to connect to the database)
+        POSTGRES_PASSWORD: 123456 # The PostgreSQL password (useful to connect to the database)
+        POSTGRES_DB: social_media # The PostgreSQL default database (automatically created at first launch)
+      volumes:
+        - ./db-data/:/var/lib/postgresql/data/
