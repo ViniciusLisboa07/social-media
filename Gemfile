@@ -47,6 +47,12 @@ gem "dotenv"
 
 gem "pg"
 
+gem "human_routes"
+
+gem "attr_keyring"
+
+gem 'ar-uuid'
+
 gem "rails-env"
 
 group :development, :test do
