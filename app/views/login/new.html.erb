@@ -1,5 +1,12 @@
-<label>
+<%= form_for @login_form, url: login_path, as: :login do |f| %>
+    <%= f.label :email, "What's your email?" %>
+    <%= f.email_field :email %>
+    <%# todo I18n %>
+    <%= f.submit "Create your account" %>
+<% end %>
+
+<%# <label>
     What's your e-mail?
     <input type="email" name="email" >
     <button>Create your account</button>
-</label>
+</label> %>
